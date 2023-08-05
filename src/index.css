@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background: pink;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pool {
+    width: 400px;
+    height: 500px;
+    border-width: 0 .4rem .4rem;
+    border-style: linear;
+    border-color: darkblue;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Water {
+    height: 50px;
+    animation: addWater 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes addWater {
+    from {
+        height: 0;
+    }
+    to {
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+
